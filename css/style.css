@@ -27,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(184, 184, 184);
+  transition: all 0.5s ease;
 }
 
 .grid-container {
@@ -37,6 +38,7 @@ body {
 
 .title {
   font-size: 30px;
+  transition: all 0.5s ease;
 }
 
 .players {
@@ -90,4 +92,88 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  transition: all 0.5s ease;
+}
+
+.titleMenu {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.menuOption button {
+  color: whitesmoke;
+  background-color: gray;
+  padding: 10px 20px;
+  font-size: 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 20px;
+}
+.menuOption button:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.optionContainer {
+  display: flex;
+  gap: 300px;
+}
+.optionContainer button {
+  padding: 10px 20px;
+  color: whitesmoke;
+  background-color: gray;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.optionContainer button:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.titleInfo {
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: -50px;
+}
+
+form {
+  margin-top: 50px;
+
+  legend {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: space-between;
+
+    button,
+    a {
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px 25px;
+      color: whitesmoke;
+      background-color: gray;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+    button:hover,
+    a:hover {
+      transform: scale(1.1);
+    }
+  }
 }
